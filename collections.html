@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collections — Nostra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-collections">
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">NOSTRA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html" class="active">Collections</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <p class="section-eyebrow">Browse Everything</p>
+    <h1 class="page-hero-title">Our Collections</h1>
+    <p class="page-hero-sub">200+ curated pieces. One deliberate store.</p>
+  </div>
+
+  <!-- SEARCH + FILTER BAR -->
+  <section class="filter-section">
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search products…" autocomplete="off" />
+      <button id="clearSearch" class="clear-btn" title="Clear search">&#10005;</button>
+    </div>
+    <div class="filter-pills">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="living">Living Room</button>
+      <button class="pill" data-filter="apparel">Apparel</button>
+      <button class="pill" data-filter="accessories">Accessories</button>
+      <button class="pill" data-filter="wellness">Wellness</button>
+    </div>
+    <div class="sort-wrap">
+      <label for="sortSelect">Sort:</label>
+      <select id="sortSelect">
+        <option value="default">Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A–Z</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- RESULTS COUNT -->
+  <div class="results-bar">
+    <p id="resultsCount">Showing all products</p>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <section class="section products-section collections-grid-section">
+    <div class="products-grid" id="productsGrid">
+
+      <!-- LIVING ROOM -->
+      <div class="product-card" data-category="living" data-name="Linen Throw Pillow" data-price="1499">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #2a2a2a, #444);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Living Room</p>
+          <h4 class="product-name">Linen Throw Pillow</h4>
+          <p class="product-price">₹1,499</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="living" data-name="Marble Coaster Set" data-price="2200">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #3a3530, #6e6055);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Living Room</p>
+          <h4 class="product-name">Marble Coaster Set</h4>
+          <p class="product-price">₹2,200</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="living" data-name="Rattan Side Table" data-price="5499">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #3b2e1e, #7a5c30);"></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Living Room</p>
+          <h4 class="product-name">Rattan Side Table</h4>
+          <p class="product-price">₹5,499</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="living" data-name="Woven Wall Hanging" data-price="3100">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1e1e2a, #3a3a5c);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Living Room</p>
+          <h4 class="product-name">Woven Wall Hanging</h4>
+          <p class="product-price">₹3,100</p>
+        </div>
+      </div>
+
+      <!-- APPAREL -->
+      <div class="product-card" data-category="apparel" data-name="Relaxed Linen Shirt" data-price="3299">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1e2d2f, #3a5a5f);"></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Apparel</p>
+          <h4 class="product-name">Relaxed Linen Shirt</h4>
+          <p class="product-price">₹3,299</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel" data-name="Oversized Cotton Tee" data-price="1299">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #282020, #5a3a3a);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Apparel</p>
+          <h4 class="product-name">Oversized Cotton Tee</h4>
+          <p class="product-price">₹1,299</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel" data-name="Wide-Leg Trousers" data-price="4200">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #202028, #404060);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Apparel</p>
+          <h4 class="product-name">Wide-Leg Trousers</h4>
+          <p class="product-price">₹4,200</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel" data-name="Merino Knit Sweater" data-price="5800">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1a2020, #2e4040);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Apparel</p>
+          <h4 class="product-name">Merino Knit Sweater</h4>
+          <p class="product-price">₹5,800</p>
+        </div>
+      </div>
+
+      <!-- ACCESSORIES -->
+      <div class="product-card" data-category="accessories" data-name="Tan Leather Wallet" data-price="2100">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #2d2416, #6b4f2a);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Accessories</p>
+          <h4 class="product-name">Tan Leather Wallet</h4>
+          <p class="product-price">₹2,100</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="accessories" data-name="Canvas Tote Bag" data-price="999">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #252525, #4a4a4a);"></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Accessories</p>
+          <h4 class="product-name">Canvas Tote Bag</h4>
+          <p class="product-price">₹999</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="accessories" data-name="Brass Keychains" data-price="599">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #2a2510, #6b5f20);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Accessories</p>
+          <h4 class="product-name">Brass Keychain</h4>
+          <p class="product-price">₹599</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="accessories" data-name="Handwoven Bracelet" data-price="750">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1e1825, #3a2e50);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Accessories</p>
+          <h4 class="product-name">Handwoven Bracelet</h4>
+          <p class="product-price">₹750</p>
+        </div>
+      </div>
+
+      <!-- WELLNESS -->
+      <div class="product-card" data-category="wellness" data-name="Cedarwood Candle" data-price="899">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1d1d22, #3c3c4f);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Wellness</p>
+          <h4 class="product-name">Cedarwood Candle</h4>
+          <p class="product-price">₹899</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="wellness" data-name="Bamboo Diffuser" data-price="1800">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1a251e, #304535);"></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Wellness</p>
+          <h4 class="product-name">Bamboo Diffuser</h4>
+          <p class="product-price">₹1,800</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="wellness" data-name="Organic Face Oil" data-price="1250">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #252010, #504020);"></div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Wellness</p>
+          <h4 class="product-name">Organic Face Oil</h4>
+          <p class="product-price">₹1,250</p>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="wellness" data-name="Meditation Cushion" data-price="2600">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder" style="background: linear-gradient(135deg, #1e1e30, #353555);"></div>
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Wellness</p>
+          <h4 class="product-name">Meditation Cushion</h4>
+          <p class="product-price">₹2,600</p>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <div class="empty-icon">&#9711;</div>
+      <h3>No products found</h3>
+      <p>Try adjusting your search or filter.</p>
+      <button class="btn btn-ghost" id="resetBtn">Reset Filters</button>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2 class="footer-logo">NOSTRA</h2>
+        <p>Curated living for the thoughtful home.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="collections.html">Collections</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Nostra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
